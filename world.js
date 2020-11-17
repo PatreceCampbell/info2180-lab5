@@ -11,9 +11,8 @@ window.onload = function(){
     function handleClick(clickEvent){
         clickEvent.preventDefault();
         console.log("I GOT CLICKED")
-        var url = "world.php?query=" + country.value;
+        var url = "world.php?country=" + country.value;
         console.log(country.value);
-        console.log(url);
         httpRequest.onreadystatechange = fetchingdata;
         httpRequest.open('GET', url, true);
         httpRequest.send();
