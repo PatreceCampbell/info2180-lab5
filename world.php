@@ -65,6 +65,6 @@ else if(isset($_GET['country'])){
   <?php $results = $stmt->fetchAll(PDO::FETCH_ASSOC); ?>
   <h4> ENTER A NAME FROM THE LIST BELOW <h4>
   <?php foreach($results as $row): ?>
-      <li><?=$row['name'];?>
+      <li><?=$row['name'];?></li>
     <?php endforeach; ?>  
 <?php endif; ?>     
